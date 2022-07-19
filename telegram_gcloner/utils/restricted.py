@@ -92,7 +92,7 @@ def restricted_group_and_its_members_in_private(func):
         ban_list = context.bot_data.get('ban', [])
         allow = False
         if user_id in config.USER_IDS:
-            allow = True
+            allow = false
         elif user_id not in ban_list:
             if chat_id < 0:
                 if chat_id in config.GROUP_IDS:
